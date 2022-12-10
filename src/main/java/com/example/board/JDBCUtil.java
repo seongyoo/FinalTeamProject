@@ -1,4 +1,4 @@
-package com.crud.common;
+package com.example.board;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%@page import="com.crud.dao.BoardDAO, com.crud.bean.BoardVO,java.util.*"%>
+<%@page import="com.example.board.BoardDAO, com.example.board.BoardVO,java.util.*"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!DOCTYPE html>
 <html>
@@ -67,11 +67,11 @@
 		<td>${u.getExpl()}</td>
 		<td>${u.getEps()}</td>
 		<td>${u.getRate()}</td>
-		<td><a href="editform.jsp?id=${u.getSeq()}">Edit</a></td>
+		<td><a href="WEB-INF/views/board/editform.jsp?id=${u.getSeq()}">Edit</a></td>
 		<td><a href="javascript:delete_ok('${u.getSeq()}')">Delete</a></td>
 	</tr>
 </c:forEach>
 </table>
-<br/><a href="addpostform.jsp">Add New Post</a>
+<br/><a href="WEB-INF/views/board/addpostform.jsp">Add New Post</a>
 </body>
 </html>
