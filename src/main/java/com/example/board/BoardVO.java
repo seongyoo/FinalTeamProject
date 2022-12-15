@@ -1,15 +1,15 @@
 package com.example.board;
 
-import java.util.Date;
-
 public class BoardVO {
     private int seq;
+    private String rank;
     private String title;
-    private String writer;
-    private String content;
-    private Date regdate;
-    private int cnt;
-    private String Category;
+    private String platform;
+    private String type;
+    private String character;
+    private String expl;
+    private String eps;
+    private String rate;
 
     public int getSeq() {
         return seq;
@@ -17,6 +17,14 @@ public class BoardVO {
 
     public void setSeq(int seq) {
         this.seq = seq;
+    }
+
+    public String getRank() {
+        return rank;
+    }
+
+    public void setRank(String rank) {
+        this.rank = rank;
     }
 
     public String getTitle() {
@@ -27,43 +35,51 @@ public class BoardVO {
         this.title = title;
     }
 
-    public String getWriter() {
-        return writer;
+    public String getPlatform() {
+        return platform;
     }
 
-    public void setWriter(String writer) {
-        this.writer = writer;
+    public void setPlatform(String platform) {
+        this.platform = platform;
     }
 
-    public String getContent() {
-        return content;
+    public String getType() {
+        return type;
     }
 
-    public void setContent(String content) {
-        this.content = content;
+    public void setType(String type) {
+        this.type = type;
     }
 
-    public Date getRegdate() {
-        return regdate;
+    public String getCharacter() {
+        return character;
     }
 
-    public void setRegdate(Date regdate) {
-        this.regdate = regdate;
+    public void setCharacter(String character) {
+        this.character = character;
     }
 
-    public int getCnt() {
-        return cnt;
+    public String getExpl() {
+        return expl;
     }
 
-    public void setCnt(int cnt) {
-        this.cnt = cnt;
+    public void setExpl(String expl) {
+        this.expl = expl;
     }
 
-    public String getCategory() {
-        return Category;
+    public String getEps() {
+        return eps;
     }
 
-    public void setCategory(String category) {
-        Category = category;
+    public void setEps(String eps) {
+        this.eps = eps;
+    }
+
+    public String getRate() {
+        return rate;
+    }
+
+    public void setRate(String rate) {
+        this.rate = rate;
     }
 }

@@ -42,15 +42,20 @@
 </head>
 <body>
 <h1>자유게시판</h1>
-
+<form method="post" action="logout">
+	<button type='submit'>logout</button>
+</form>
 <table id="list" width="90%">
 	<tr>
 		<th>Id</th>
-		<th>Category</th>
+		<th>Rank</th>
 		<th>Title</th>
-		<th>Writer</th>
-		<th>Content</th>
-		<th>Regdate</th>
+		<th>Platform</th>
+		<th>Type</th>
+		<th>Character</th>
+		<th>Expl</th>
+		<th>Eps</th>
+		<th>Rate</th>
 		<th>Edit</th>
 		<th>Delete</th>
 
@@ -60,11 +65,14 @@
 	<c:forEach items ="${list}" var="u">
 		<tr>
 			<td>${u.seq}</td>
-			<td>${u.category}</td>
+			<td>${u.rank}</td>
 			<td>${u.title}</td>
-			<td>${u.writer}</td>
-			<td>${u.content}</td>
-			<td>${u.regdate}</td>
+			<td>${u.platform}</td>
+			<td>${u.type}</td>
+			<td>${u.character}</td>
+			<td>${u.expl}</td>
+			<td>${u.eps}</td>
+			<td>${u.rate}</td>
 			<td><a href="editform/${u.seq}">글수정</a></td>
 			<td><a href="javascript:delete_ok('${u.seq}')">글삭제</a></td>
 		</tr>

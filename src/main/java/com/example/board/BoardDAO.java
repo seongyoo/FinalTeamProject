@@ -20,11 +20,11 @@ import java.util.List;
 @Repository
 public class BoardDAO {
 
-    private final String BOARD_INSERT = "insert into BOARD(category,title, writer, content) values (?,?,?,?)";
-    private final String BOARD_UPDATE = "update BOARD set category=?,title=?, writer=?, content=? where seq=?";
-    private final String BOARD_DELETE = "delete from BOARD  where seq=?";
-    private final String BOARD_GET = "select * from BOARD  where seq=?";
-    private final String BOARD_LIST = "select * from BOARD order by seq desc";
+    private final String BOARD_INSERT = "insert into drama(rank,title,platform,type,character,expl,eps,rate) values (?,?,?,?,?,?,?,?)";
+    private final String BOARD_UPDATE = "update drama set rank=?, title=?, platform=?, type=?, character=?, expl=?, eps=?, rate=? where seq=?";
+    private final String BOARD_DELETE = "delete from drama  where seq=?";
+    private final String BOARD_GET = "select * from drama  where seq=?";
+    private final String BOARD_LIST = "select * from drama order by seq desc";
 
     @Autowired
     SqlSession sqlSession;
