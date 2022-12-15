@@ -2,12 +2,12 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="Board">
     <insert id="insertBoard">
-        insert into drama (rank, title, platform, type, character, expl, eps, rate)
-        values (#{rank} , #{title} , #{platform} , #{type}, #{character}, #{expl}, #{eps}, #{rate})
+        insert into drama (rank1, title, platform, type1, character1, expl, eps, rate)
+        values (#{rank1} , #{title} , #{platform} , #{type1}, #{character1}, #{expl}, #{eps}, #{rate})
     </insert>
     <update id="updateBoard">
         update drama
-        set rank=#{rank}, title=#{title}, platform=#{platform}, type=#{type}, character=#{character}, expl=#{expl}, eps=#{eps}, rate=#{rate} where seq=#{seq}
+        set rank1=#{rank1}, title=#{title}, platform=#{platform}, type1=#{type1}, character1=#{character1}, expl=#{expl}, eps=#{eps}, rate=#{rate} where seq=#{seq}
     </update>
     <delete id="deleteBoard">
         delete from drama where seq=#{seq}

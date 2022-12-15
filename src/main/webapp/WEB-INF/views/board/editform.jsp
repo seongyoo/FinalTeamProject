@@ -12,11 +12,22 @@
 <h1>Edit Form</h1>
 <form:form modelAttribute = "boardVO" method="POST" action="../editok">
 	<form:hidden path="seq"/>
-	<table id="edit">
-	<tr><td>카테고리:</td><td><form:input type="text" path="category"/></td></tr>
-	<tr><td>제목:</td><td><form:input type="text" path="title"/></td></tr>
-	<tr><td>글쓴이:</td><td><form:input type="text" path="writer"/></td></tr>
-	<tr><td>내용:</td><td><form:textarea cols="50" rows="5" path="content"/></td></tr>
+	<table id ="edit">
+		<tr><td>순위:</td><td><input type="text" name="rank"/></td></tr>
+		<tr><td>드라마제목:</td><td><input type="text" name="title"/></td></tr>
+		<tr><td>플랫폼:</td><td><input type="text" name="platform"/></td></tr>
+		<tr><td>장르:</td><td>
+			<select id="type" name="type">
+				<option value="romance">로맨스</option>
+				<option value="comedy">코미디</option>
+				<option value="thriller">스릴러</option>
+				<option value="action.">액션</option>
+			</select>
+		</td></tr>
+		<tr><td>등장인물:</td><td><textarea cols="50" rows="5" name="character"></textarea></td></tr>
+		<tr><td>작품설명:</td><td><textarea cols="50" rows="5" name="expl"></textarea></td></tr>
+		<tr><td>회차수:</td>:</td><td><input type="text" name="eps"/></td></tr>
+		<tr><td>평점</td>:</td><td><input type="text" name="rate"/></td></tr>
 	</table>
 	<input type="submit" value="수정하기"/>
 	<input type="button" value="취소하기" onclick="history.back()"/>
