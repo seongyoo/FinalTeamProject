@@ -2,11 +2,11 @@ package com.example.board;
 
 public class BoardVO {
     private int seq;
-    private String rank;
+    private String rank1;
     private String title;
     private String platform;
-    private String type;
-    private String character;
+    private String type1;
+    private String character1;
     private String expl;
     private String eps;
     private String rate;
@@ -20,11 +20,11 @@ public class BoardVO {
     }
 
     public String getRank() {
-        return rank;
+        return rank1;
     }
 
-    public void setRank(String rank) {
-        this.rank = rank;
+    public void setRank(String rank1) {
+        this.rank1 = rank1;
     }
 
     public String getTitle() {
@@ -44,19 +44,19 @@ public class BoardVO {
     }
 
     public String getType() {
-        return type;
+        return type1;
     }
 
-    public void setType(String type) {
-        this.type = type;
+    public void setType(String type1) {
+        this.type1 = type1;
     }
 
     public String getCharacter() {
-        return character;
+        return character1;
     }
 
-    public void setCharacter(String character) {
-        this.character = character;
+    public void setCharacter(String character1) {
+        this.character1 = character1;
     }
 
     public String getExpl() {
